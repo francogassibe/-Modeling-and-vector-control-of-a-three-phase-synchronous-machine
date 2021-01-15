@@ -45,9 +45,23 @@ If we were able somehow to make ids=0 then suddenly our systems whould become li
 
 ![](Capture9.PNG)
 
-if we force ids=0 in the previous equations we can arrive to a algebraic contrain for that to be true: 
+Notice here the similarity with a CC motor model.
+
+if we force ids=0 in the previous equations we can arrive to an algebraic condition for that to be true: 
 
 ![](Capture8.PNG)
+as vd is an imput variable and iq and w are state variables then we can anchive this condition making a feedback 
+
+
+After that we model everithing on Symulink:
+
+![](Capture10.PNG)
+
+The plant in blue the sensors in green and the controller logic in brown 
+
+
+
+
 
 
 
