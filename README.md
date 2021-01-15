@@ -102,9 +102,9 @@ In this case we saw that the system was obserbable from theta but not totaly obs
 
 
 **Torque Modulator:**
-Here we look at the dynamics to try to undock the system from its physique variables.
+Here we look at the dynamics to try to uncouple the system from its physique variables.
 
-The idea is to 'compensate' the voltage drops in the voltage command. Then we do the same for the torque, we compensate the torque drop in the torque command. We always have to scale the outputs to pass from one physical variable to another (this are the gains).
+The idea is to 'compensate' the voltage drops in the voltage command. Then we do the same for the torque, we compensate the torque drop in the torque command. We always have to scale the outputs to pass from one physical variable to another (this are the gains of the modulator).
 
 ![](Capture19.PNG)
 
@@ -125,9 +125,29 @@ After implementing the torque modulator we have to define the torque comand.
 Here we used the desired polynomial method to define the parameters of our PID. This way we make sure the poles location is stable. 
 
 ![](Capture21.PNG)
+
+We can see here that even if we are controling theta the imput variable of our controller is omega. So later we will build and observer to estimate it (we dont have speed sensors). We do this to avoid numeric derivation of theta. 
+
 ![](Capture22.PNG)
 
 
+
+**Observer:**
+
+
+![](Capture23.PNG)
+
+Here the observers model has been simplyfied thanks to the toque modulator and the uncoupling of the variables. 
+
+Notice here that an integrator has been aded to be able to eliminate the posible acumulated error in the observed theta due to posible torques perturbations on our plant.
+
+
+**Final diagram:**
+
+![](Capture24.PNG)
+
+
+**Command:**
 
 
 
