@@ -50,7 +50,7 @@ Notice here the similarity with a CC motor model.
 if we force ids=0 in the previous equations we can arrive to an algebraic condition for that to be true: 
 
 ![](Capture8.PNG)
-as vd is an imput variable and iq and w are state variables then we can anchive this condition making a feedback 
+As vd is an imput variable and iq and w are state variables then we can anchive this condition making a feedback 
 
 
 After that we model everithing on Symulink:
