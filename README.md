@@ -10,7 +10,7 @@ Part B: Observability, Controlability, design of a Torque modulator and cascade 
 
 **Modeling:**
 
-Mecanical subsystems:
+-Mecanical subsystems:
 
 ![](Capture.PNG) 
 
@@ -25,6 +25,17 @@ The mecanic load and the motor are related by a gearbox.
 Modeling each part with its differential equation and after some algebraic work we can arrive to a global mecanical model refered to the motors angle with equivalent parameters then we can write the state space as follows:
 
 ![](Capture3.PNG)
+
+-Electromagnetic subsystem:
+
+Here we make use of Parks Transformation to arrive from stator variables to rotor variables and be able to express our dynamics in terms of a new coordinate system that turns along with the magnetic turning field of the motor.
+![](Capture6.PNG)
+
+The algebraic work is long and cumbersome so we will directly show the diferential equations in the new coordinate system:
+![](Capture4.PNG)
+![](Capture5.PNG)
+
+
 
 
 
