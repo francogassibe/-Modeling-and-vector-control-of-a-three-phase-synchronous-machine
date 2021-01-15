@@ -106,11 +106,11 @@ Here we look at the dynamics to try to undock the system from its physique varia
 
 The idea is to 'compensate' the voltage drops in the voltage command. Then we do the same for the torque, we compensate the torque drop in the torque command. We always have to scale the outputs to pass from one physical variable to another (this are the gains).
 
-![](Capture18.PNG)
-
-We repeat the proces for each branch.
-
 ![](Capture19.PNG)
+
+We repeat the proces for each branch. Resulting in the folling diagram.
+
+![](Capture18.PNG)
 
 
 After implementing the torque modulator we have to define the torque comand.
