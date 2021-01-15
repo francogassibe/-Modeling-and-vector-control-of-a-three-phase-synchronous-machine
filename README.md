@@ -7,6 +7,7 @@ The project is separated in 2 parts
 Part A: Modeling and symulation of the motor in open loop(without feedback) using rotoric coordinate system (Parks transformation), pole-zero analisis, transfer function analisis, feedback linearization.
 Part B: Observability, Controlability, design of a Torque modulator and cascade controller (also modeling), robustnes, rlocus and pole-zero analysis, creating a desired command that can be reproduced without putting the machine in risk of braking it.
 
+Part A:
 
 **Modeling:**
 
@@ -50,6 +51,7 @@ Notice here the similarity with a CC motor model.
 if we force ids=0 in the previous equations we can arrive to an algebraic condition for that to be true: 
 
 ![](Capture8.PNG)
+
 As vd is an imput variable and iq and w are state variables then we can anchive this condition making a feedback 
 
 
@@ -61,19 +63,18 @@ The plant in blue the sensors in green and the numeric implementation logic in b
 
 
 
-Transfer function:
+**Transfer function:**
 
 ![](Capture11.PNG)
 
 
-Zero-pole ubication:
+**Zero-pole ubication:**
 
 ![](Capture12.PNG)
 
-We obtain this points by looking to the solutions of the characteristic polynomial in our transfer function.
-We verify here that the system is stable
+We obtain this points by looking to the solutions of the characteristic polynomial in our transfer function. We verify here that the system is stable.
 
-Symulation:
+**Symulation:**
 
 ![](Capture13.PNG)
 Theta, omega, ids and iq.
@@ -84,6 +85,19 @@ Tension and current of the 3 phases. Here we can see the transient dynamic zone 
 
 
 
+
+
+Part B:
+
+**Controlability and Observability:**
+
+![](Capture15.PNG)
+![](Capture16.PNG)
+We verify that the system is totaly controlable
+
+![](Capture17.PNG)
+
+In this case we saw that the system was obserbable from theta but not totaly obserbable from omega. Means we can use the variable theta to maybe later estimate some state variables.
 
 
 
