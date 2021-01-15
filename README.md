@@ -183,9 +183,17 @@ Alfa: the hight of both trapezes
 Then we have the physical restricctions:
 
 1) The total movement the trayectory is the double integral of the orange curve.
+
 2)The maximum speed of the trayectory is the area under the curve of the 1st trapeze.
+
 3)The final speed (in this case 0) is equal to the diference between the areas of the 1st and 2nd trapeze.
+
 4)The sum of Tv1+Tv2+Tm is equal to the desired trayectory time.
+
+
+Having this way a 4x4 System of Equations. Solving it we founded the trapezes parameters (Orange curve)
+
+So if the System of Equation can find a Real Positive Solution then the command can be generated without exeeding any maximum value of the machine keeping it in sfae work conditions.
 
 
 
@@ -195,10 +203,7 @@ Then we have the physical restricctions:
 
 
 
-
-
-
-
+As the image shows there are no overshoots in any variable and all the maximum values of the maxhine are respected.
 
 
 
