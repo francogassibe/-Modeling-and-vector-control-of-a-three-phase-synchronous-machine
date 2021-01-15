@@ -79,6 +79,7 @@ Symulation:
 Theta, omega, ids and iq.
 
 ![](Capture14.PNG)
+
 Tension and current of the 3 phases. Here we can see the transient dynamic zone at the begining. But then when the system stabilizes we can see that the input of the system converges to a 3 symetrical and balanced triphaced system with fixed frequency. This frequency matches the the formula of a synchronic machine speed so we can veryfy that our model is acurate.
 
 
