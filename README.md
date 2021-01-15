@@ -37,6 +37,18 @@ The algebraic work is long and cumbersome so we will directly show the diferenti
 
 ![](Capture5.PNG)
 
+Resulting in the following non linear state space:
+
+![](Capture7.PNG)
+
+If we were able somehow to make ids=0 then suddenly our systems whould become linear.
+
+![](Capture9.PNG)
+
+if we force ids=0 in the previous equations we can arrive to a algebraic contrain for that to be true: 
+
+![](Capture8.PNG)
+
 
 
 
