@@ -203,13 +203,11 @@ So if the System of Equation can find a Real Positive Solution then the command 
 
 
 
-As the image shows there are no overshoots in any variable and all the maximum values of the maxhine are respected.
+As the image shows, there are no overshoots in any variable and all the maximum values of the maxhine are respected.
+
+
+The Simulink model is in the 'Modelo_no_lineal_completoVA' file and the code to find the trapezes parameters is in the 'perfil_tiempomuerto' file. Finaly the full report (in spanish) is in the 'informe_final_AyME' file.
 
 
 
-
-
-
-
-
-
+Tanks!
