@@ -151,11 +151,46 @@ Notice here that an integrator has been aded to be able to eliminate the posible
 
 
 
+We first tryed a trapezoidal position command to make the motor turn a full turn in one direction and the controller has no problem in doing it, the probleme was the electric current was to high due to an instantanius jump in the speed (step) witch meas an infinite acceleration witch means infinite torque witch means lot of electrical current to comply what the controller is asking to do. This can terminate in burning the motors circuit. Also we had problems with the oversoot in speed and mecanical torque of the machine.
+
+
+
+For this we tryed a trapezoidal speed command to see if softing the command would result in lower currents. Unfortunate the speed been a trapezoid means acceleration been 
+a step and that means jerk been an infinite value. This jerk peaks can produce undesired intrinsic forces on the machine.
+
+![](Capture25.PNG)
+
+
+So at last we implemente trapezoidal acceleration command. The thing is we have to define it now. There are infinite trapezoidal commands that can reproduce the movement we want. 
 
 
 
 
+![](Capture26.PNG)
 
+
+**We are looking a way to define the orange trapezes**
+
+
+So what we did was to parametrize thees trapezes and then righting down the physical restricctions (equations) in terms of the trapezes parameters :
+
+The trapezes have 4 parameters:
+Tv1: the base of the 1st trapeze
+Tv2: the base of the 2nd trapeze
+Tm: the dead zone between them
+Alfa: the hight of both trapezes
+
+Then we have the physical restricctions:
+
+1) The total movement the trayectory is the double integral of the orange curve.
+2)The maximum speed of the trayectory is the area under the curve of the 1st trapeze.
+3)The final speed (in this case 0) is equal to the diference between the areas of the 1st and 2nd trapeze.
+4)The sum of Tv1+Tv2+Tm is equal to the desired trayectory time.
+
+
+
+
+![](Capture27.PNG)
 
 
 
