@@ -32,8 +32,11 @@ Here we make use of Parks Transformation to arrive from stator variables to roto
 ![](Capture6.PNG)
 
 The algebraic work is long and cumbersome so we will directly show the diferential equations in the new coordinate system:
+
 ![](Capture4.PNG)
+
 ![](Capture5.PNG)
+
 
 
 
