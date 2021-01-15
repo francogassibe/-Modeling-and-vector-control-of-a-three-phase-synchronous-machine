@@ -5,7 +5,7 @@
 The project is separated in 2 parts
 
 Part A: Modeling and symulation of the motor in open loop(without feedback) using rotoric coordinate system (Parks transformation), pole-zero analisis, transfer function analisis, feedback linearization.
-Part B: Observability, Controlability, design of a Torque modulator and cascade controller (also modeling), robustnes, rlocus and pole-zero analysis, creating a desired command that can be reproduced without putting the machine in risk of braking it.
+Part B: Observability, Controlability, design of a Torque modulator and cascade controller, robustnes, rlocus and pole-zero analysis, observer, creating a desired command that can be reproduced without putting the machine in risk of braking it.
 
 Part A:
 
@@ -93,11 +93,53 @@ Part B:
 
 ![](Capture15.PNG)
 ![](Capture16.PNG)
+
 We verify that the system is totaly controlable
 
 ![](Capture17.PNG)
 
 In this case we saw that the system was obserbable from theta but not totaly obserbable from omega. Means we can use the variable theta to maybe later estimate some state variables.
+
+
+**Torque Modulator:**
+Here we look at the dynamics to try to undock the system from its physique variables.
+
+The idea is to 'compensate' the voltage drops in the voltage command. Then we do the same for the torque, we compensate the torque drop in the torque command. We always have to scale the outputs to pass from one physical variable to another (this are the gains).
+
+![](Capture18.PNG)
+
+We repeat the proces for each branch.
+
+![](Capture19.PNG)
+
+
+After implementing the torque modulator we have to define the torque comand.
+
+**PID:**
+
+![](Capture20.PNG)
+
+
+**Zero-pole analysis:**
+
+Here we used the desired polynomial method to define the parameters of our PID. This way we make sure the poles location is stable. 
+
+![](Capture21.PNG)
+![](Capture22.PNG)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
