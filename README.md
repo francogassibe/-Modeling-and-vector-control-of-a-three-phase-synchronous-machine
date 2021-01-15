@@ -57,7 +57,25 @@ After that we model everithing on Symulink:
 
 ![](Capture10.PNG)
 
-The plant in blue the sensors in green and the controller logic in brown 
+The plant in blue the sensors in green and the numeric implementation logic in brown.
+
+
+
+Transfer function:
+
+![](Capture11.PNG)
+
+
+Zero-pole ubication:
+
+![](Capture12.PNG)
+
+We obtain this points by looking to the solutions of the characteristic polynomial in our transfer function.
+
+
+Symulation:
+
+![](Capture13.PNG)
 
 
 
