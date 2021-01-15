@@ -11,4 +11,9 @@ Part B: Observability, Controlability, design of a Torque modulator and cascade 
 **Modeling:**
 
 Mecanical subsystems:
-![]
+![](Capture.PNG)
+![](Capture2.PNG)
+
+
+
+
