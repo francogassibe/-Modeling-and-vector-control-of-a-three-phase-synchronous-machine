@@ -19,6 +19,7 @@ Mecanic load (joint of a SCARA robot). We supose for simplification reasons that
 ![](Capture2.PNG)
 
 Synchronous Motor
+
 The mecanic load and the motor are related by a gearbox.
 
 Modeling each part with its differential equation and after some algebraic work we can arrive to a global mecanical model refered to the motors angle with equivalent parameters then we can write the state space as follows:
