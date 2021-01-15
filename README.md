@@ -11,9 +11,13 @@ Part B: Observability, Controlability, design of a Torque modulator and cascade 
 **Modeling:**
 
 Mecanical subsystems:
+
 ![](Capture.PNG) 
+
 Mecanic load (joint of a SCARA robot). We supose for simplification reasons that the inertia of the joint is constant
+
 ![](Capture2.PNG)
+
 Synchronous Motor
 The mecanic load and the motor are related by a gearbox.
 
